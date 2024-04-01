@@ -1,5 +1,26 @@
-let greeting: string = 'hello world'
+let greeting: string = 'hello world';
 
-console.log(greeting)
+greeting = greeting.toUpperCase();
+
+console.log(greeting);
+
+// number
+
+let userId: number = 334466
+
+// boolean
+
+let isLoggedIn: boolean = true
+
+// any
+
+let hero
+
+function getHero() {
+    return 'Max'
+}
+
+hero = getHero()
+
 
 export {}
