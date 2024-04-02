@@ -34,6 +34,7 @@ type User = {
     name: string;
     email: string;
     isActive: boolean;
+    credcardNumber?: number
 }
 
 let myUser: User = {
@@ -43,5 +44,18 @@ let myUser: User = {
     isActive: false
 }
 
+type cardNumber = {
+    cardnumber: string;
+}
+
+type cardDate = {
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
+}
+
+myUser.email = 'j@gmail.com'
 
 export {} 
